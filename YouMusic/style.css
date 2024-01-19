@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    min-height: 90vh;
+    background: linear-gradient(90deg, rgba(250,135,251,1) 0%, #3b3b3b 100%);
+    position: relative;
+    display: grid;
+    justify-content: left;
+}
+
+.logo{
+  width: 10%;
+  margin: 50px 50px 0px 50px;
+}
+
+.header-text{
+   position: relative;
+   text-align: left;
+   align-items: center;
+   margin: 50px 0px 50px 50px;
+}
+
+.header-text h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+.social-icons{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 90px 0 0 50px;
+}
+
+.social-icons a{
+    font-size: 50px;
+    color: #3b3b3b;
+}
+
+.social-icons a:hover{
+    color: plum;
+}
+
+.square{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: #FFF;
+    margin: 15px 0;
+}
+
+.common-btn{
+    background: transparent;
+    outline: none;
+    border: 2px solid #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+}
+
+p{
+    font-size: 20px;
+    line-height: 18px;
+    color: #3b3b3b;
+}
+
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: plum;
+    z-index: 2;
+    transition: .1s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*----about----*/
+
+.about-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.about-left-col{
+    flex-basis: 50%;
+}
+
+.about-left-col img{
+    width: 50%;
+    padding-left: 180px;
+}
+
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.about-text{
+    position: relative;
+    max-width: 400px;
+    text-align: justify;
+    align-items: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style:Bold;
+}
+
+.about-text h3{
+    font-size: 20px;
+    font-style: italic;
+    color: #797979;
+}
+
+#features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, rgba(250,135,251,1) 0%, #3b3b3b 100%);
+}
+
+.feature-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.feature-col{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 40%;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.feature-col img{
+    
+    width: 100px;
+}
+
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.contact-left-col,.contact-right-col{
+    margin-top: 50px;
+    flex-basis: 50%;
+}
+
+form{
+    max-width: 350px;
+    margin: 50px 0;
+    padding-left: 50px;
+}
+
+form input{
+    margin-right: 20px;
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid plum;
+    border-radius: 10px;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+
+#footer{
+    padding: 50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid plum;
+}
+
+.footer {
+    position: absolute;
+    z-index: -1;
+    max-width: 1480px;
+    width: 100%;
+    background: plum;
+    border-radius: 6px;
+  }
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+  }
+  .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  .footer-col p {
+    margin: 20px 0;
+    color: #FFF;
+    max-width: 300px;
+  }
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6 ;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+  }
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  .footer-col form button:hover {
+    background: #cecccc;
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  .footer-col .icons i {
+    color: #FFF;
+  }
+  .footer-col .icons i:hover  {
+    color: #000;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+    }
+    .footer-col form {
+      display: block;
+    }
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+    .footer-col form button {
+      margin: 10px 0 0 0;
+    }
+  }
+  
+
+@media only screen and (max-widht: 700px){
+    #header{
+        background-image: none;
+
+    }
+    .conteiner{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .logo{
+        margin-top: 27px;
+        width: 80px;
+        margin-right: 1000px;
+        padding-left: 50px;
+    }
+    
+    .header-text{
+        margin-top: 140px;
+        padding-left: 50px;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+}
+#menuBtn{
+    width: 40px;
+    right: 50px;
+
+}
+.common-btn{
+    padding: 10px 16px;
+}
+.social-icons img{
+    width: 14px;
+    margin: 15px auto;
+}
